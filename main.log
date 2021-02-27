@@ -1,0 +1,272 @@
+2021-02-09 15:37:11,272, DEBUG, root, ������ Telegram-����
+2021-02-09 15:37:11,794, INFO, root, ���������� ��������� � ��� Telegram
+2021-02-09 15:37:11,794, DEBUG, telegram.bot, Entering: send_message
+2021-02-09 15:37:11,794, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-09 15:37:12,381, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 745
+2021-02-09 15:37:12,382, DEBUG, telegram.bot, {'message_id': 74, 'date': 1612874232, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': '� ��� ��������� ������ "dansen95__api_sp1_bot.zip"!\n\n�������� �� �����������, ����� ���������� � ���������� �����.', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-09 15:37:12,382, DEBUG, telegram.bot, Exiting: send_message
+2021-02-14 12:43:44,044, DEBUG, root, Запуск Telegram-бота
+2021-02-14 12:43:44,883, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-14 12:43:44,884, DEBUG, telegram.bot, Entering: send_message
+2021-02-14 12:43:44,885, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-14 12:43:45,177, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 745
+2021-02-14 12:43:45,179, DEBUG, telegram.bot, {'message_id': 78, 'date': 1613295823, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'У вас проверили работу "dansen95__api_sp1_bot.zip"!\n\nРевьюеру всё понравилось, можно приступать к следующему уроку.', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-14 12:43:45,180, DEBUG, telegram.bot, Exiting: send_message
+2021-02-14 12:44:21,649, DEBUG, root, Запуск Telegram-бота
+2021-02-14 12:44:22,093, ERROR, root, Ошибка: Ответ сервера содержит неверный статус
+2021-02-14 12:44:22,093, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-14 12:44:22,093, DEBUG, telegram.bot, Entering: send_message
+2021-02-14 12:44:22,094, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-14 12:44:22,367, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 512
+2021-02-14 12:44:22,369, DEBUG, telegram.bot, {'message_id': 79, 'date': 1613295860, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Ошибка: Ответ сервера содержит неверный статус', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-14 12:44:22,369, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 21:25:04,655, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:25:05,516, ERROR, root, Ошибка: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 69, in main
+    new_weather = get_weather_status(current_timestamp)
+  File "D:\Dev\weather_bot\homework.py", line 51, in get_weather_status
+    return weather_statuses.json()
+  File "D:\Dev\api_sp1_bot\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-02-26 21:25:05,721, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:25:05,721, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:28:40,428, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:28:40,844, ERROR, root, Ошибка: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 69, in main
+    new_weather = get_weather_status(current_timestamp)
+  File "D:\Dev\weather_bot\homework.py", line 51, in get_weather_status
+    return weather_statuses.json()
+  File "D:\Dev\api_sp1_bot\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-02-26 21:28:40,844, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:28:40,859, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:47:05,762, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:47:06,090, ERROR, root, Ошибка: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 69, in main
+    new_weather = get_weather_status(current_timestamp)
+  File "D:\Dev\weather_bot\homework.py", line 51, in get_weather_status
+    return weather_statuses.json()
+  File "D:\Dev\api_sp1_bot\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-02-26 21:47:06,090, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:47:06,090, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:52:09,422, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:52:09,829, ERROR, root, Ошибка: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 69, in main
+    new_weather = get_weather_status(current_timestamp)
+  File "D:\Dev\weather_bot\homework.py", line 51, in get_weather_status
+    return weather_statuses.json()
+  File "D:\Dev\api_sp1_bot\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-02-26 21:52:09,829, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:52:09,829, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:54:08,028, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:54:08,354, ERROR, root, Ошибка: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 69, in main
+    new_weather = get_weather_status(current_timestamp)
+  File "D:\Dev\weather_bot\homework.py", line 51, in get_weather_status
+    return weather_statuses.json()
+  File "D:\Dev\api_sp1_bot\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Daniel\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-02-26 21:54:08,356, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:54:08,356, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:55:50,559, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:55:50,890, ERROR, root, Ошибка: 0
+Traceback (most recent call last):
+  File "D:\Dev\weather_bot\homework.py", line 73, in main
+    parse_weather_status(new_weather.get('fact')[0]),
+KeyError: 0
+2021-02-26 21:55:50,891, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:55:50,891, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:56:15,733, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:56:15,986, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:56:15,986, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:56:15,986, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 21:56:16,299, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 21:56:16,299, DEBUG, telegram.bot, {'message_id': 85, 'date': 1614365776, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 21:56:16,299, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 21:57:17,496, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:57:18,108, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:57:18,108, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:57:18,108, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 21:57:18,389, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 21:57:18,389, DEBUG, telegram.bot, {'message_id': 86, 'date': 1614365838, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 21:57:18,389, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 21:57:44,323, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:57:44,679, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:57:44,679, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:57:44,679, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 21:57:44,984, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 21:57:44,984, DEBUG, telegram.bot, {'message_id': 87, 'date': 1614365864, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 21:57:44,984, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 21:58:51,349, DEBUG, root, Запуск Telegram-бота
+2021-02-26 21:58:51,583, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 21:58:51,583, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 21:58:51,583, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 21:58:51,864, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 21:58:51,864, DEBUG, telegram.bot, {'message_id': 88, 'date': 1614365931, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 21:58:51,864, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:09:57,144, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:09:57,498, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:09:57,498, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:09:57,498, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:09:57,938, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:09:57,938, DEBUG, telegram.bot, {'message_id': 89, 'date': 1614366597, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:09:57,938, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:10:07,933, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:10:08,229, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:10:08,229, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:10:08,229, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:10:08,576, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:10:08,576, DEBUG, telegram.bot, {'message_id': 90, 'date': 1614366608, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:10:08,576, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:10:42,748, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:10:43,035, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:10:43,035, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:10:43,035, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:10:43,285, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:10:43,285, DEBUG, telegram.bot, {'message_id': 91, 'date': 1614366643, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:10:43,285, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:11:06,707, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:11:07,059, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:11:07,059, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:11:07,059, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:11:07,407, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:11:07,407, DEBUG, telegram.bot, {'message_id': 92, 'date': 1614366667, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:11:07,407, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:11:08,738, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:11:08,738, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:11:08,847, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:11:08,847, DEBUG, telegram.bot, {'message_id': 93, 'date': 1614366668, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:11:08,847, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:11:10,178, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:11:10,178, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:11:10,288, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1579038549:AAEQ6s75QjFhSHRQHJLRyw8jom4Spk-FySI/sendMessage HTTP/1.1" 200 336
+2021-02-26 22:11:10,303, DEBUG, telegram.bot, {'message_id': 94, 'date': 1614366670, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1579038549, 'first_name': 'supersmartbot', 'is_bot': True, 'username': 'SuperAmazingBot'}}
+2021-02-26 22:11:10,303, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:43:37,354, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:43:38,019, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:43:38,020, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:43:38,020, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:43:39,915, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 332
+2021-02-26 22:43:39,916, DEBUG, telegram.bot, {'message_id': 2, 'date': 1614368619, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:43:39,916, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:46:14,084, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:46:14,413, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:46:14,413, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:46:14,414, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:46:14,756, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 342
+2021-02-26 22:46:14,758, DEBUG, telegram.bot, {'message_id': 3, 'date': 1614368774, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Сегодня в СПб 2, overcast', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:46:14,758, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:49:22,285, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:49:22,633, ERROR, root, Ошибка: 'feels like'
+2021-02-26 22:49:22,633, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:49:22,633, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:49:22,633, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:49:22,934, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 312
+2021-02-26 22:49:22,936, DEBUG, telegram.bot, {'message_id': 4, 'date': 1614368962, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': "Ошибка: 'feels like'", 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:49:22,937, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:50:54,483, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:50:54,847, ERROR, root, Ошибка: 'feels like'
+2021-02-26 22:50:54,847, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:50:54,847, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:50:54,848, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:50:55,095, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 312
+2021-02-26 22:50:55,097, DEBUG, telegram.bot, {'message_id': 5, 'date': 1614369055, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': "Ошибка: 'feels like'", 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:50:55,098, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:51:08,075, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:51:08,390, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:51:08,390, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:51:08,391, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:51:08,671, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 322
+2021-02-26 22:51:08,672, DEBUG, telegram.bot, {'message_id': 6, 'date': 1614369068, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Today in Saint-Petersburg 2 degrees, feels like -2, overcast', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:51:08,672, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:54:12,423, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:54:12,837, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:54:12,837, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:54:12,838, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:54:13,231, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 270
+2021-02-26 22:54:13,234, DEBUG, telegram.bot, {'message_id': 9, 'date': 1614369253, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'i love u', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:54:13,235, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 22:56:07,733, DEBUG, root, Запуск Telegram-бота
+2021-02-26 22:56:08,009, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 22:56:08,009, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 22:56:08,009, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 22:56:08,248, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 271
+2021-02-26 22:56:08,250, DEBUG, telegram.bot, {'message_id': 11, 'date': 1614369368, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'i love u', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 22:56:08,251, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 23:00:02,232, DEBUG, root, Запуск Telegram-бота
+2021-02-26 23:00:07,475, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 23:00:07,475, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 23:00:07,476, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 23:00:08,020, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 281
+2021-02-26 23:00:08,022, DEBUG, telegram.bot, {'message_id': 13, 'date': 1614369608, 'chat': {'id': 184197546, 'type': 'private', 'username': 'alexxxsen', 'first_name': 'Aleksandra', 'last_name': 'Sen'}, 'text': 'i love u kisa', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 23:00:08,022, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 23:01:01,508, DEBUG, root, Запуск Telegram-бота
+2021-02-26 23:01:01,880, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 23:01:01,880, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 23:01:01,881, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 23:01:02,148, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 328
+2021-02-26 23:01:02,150, DEBUG, telegram.bot, {'message_id': 14, 'date': 1614369662, 'chat': {'id': 184197546, 'type': 'private', 'username': 'alexxxsen', 'first_name': 'Aleksandra', 'last_name': 'Sen'}, 'text': 'Today in Saint-Petersburg 2 degrees, feels like -2, overcast', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 23:01:02,151, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 23:11:20,765, DEBUG, root, Запуск Telegram-бота
+2021-02-26 23:11:21,092, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 23:11:21,092, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 23:11:21,093, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 23:11:21,402, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 323
+2021-02-26 23:11:21,404, DEBUG, telegram.bot, {'message_id': 15, 'date': 1614370281, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Today in Saint-Petersburg 2 degrees, feels like -2, overcast', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 23:11:21,406, DEBUG, telegram.bot, Exiting: send_message
+2021-02-26 23:19:18,814, DEBUG, root, Запуск Telegram-бота
+2021-02-26 23:19:19,135, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-26 23:19:19,135, DEBUG, telegram.bot, Entering: send_message
+2021-02-26 23:19:19,136, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-26 23:19:19,581, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 339
+2021-02-26 23:19:19,583, DEBUG, telegram.bot, {'message_id': 16, 'date': 1614370759, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Today in Saint-Petersburg 2 degrees, feels like -2, overcast, wind speed 3.2', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-26 23:19:19,584, DEBUG, telegram.bot, Exiting: send_message
+2021-02-27 13:26:53,579, DEBUG, root, Запуск Telegram-бота
+2021-02-27 13:26:54,008, INFO, root, Отправлено сообщение в чат Telegram
+2021-02-27 13:26:54,008, DEBUG, telegram.bot, Entering: send_message
+2021-02-27 13:26:54,008, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, Starting new HTTPS connection (1): api.telegram.org
+2021-02-27 13:26:54,378, DEBUG, telegram.vendor.ptb_urllib3.urllib3.connectionpool, https://api.telegram.org:443 "POST /bot1695130226:AAGLiCgqhNod-JWWklsQWRW4P001DIO9A3o/sendMessage HTTP/1.1" 200 339
+2021-02-27 13:26:54,378, DEBUG, telegram.bot, {'message_id': 17, 'date': 1614421613, 'chat': {'id': 350758260, 'type': 'private', 'username': 'dansen95', 'first_name': 'Daniel', 'last_name': 'Sen'}, 'text': 'Today in Saint-Petersburg 2 degrees, feels like -2, overcast, wind speed 3.6', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1695130226, 'first_name': 'weather_bot', 'is_bot': True, 'username': 'AlwaysRainyBot'}}
+2021-02-27 13:26:54,378, DEBUG, telegram.bot, Exiting: send_message
