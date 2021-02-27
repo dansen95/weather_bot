@@ -79,7 +79,7 @@ def main():
                 'now_dt',
                 current_timestamp
             )
-            time.sleep(300)
+            time.sleep(86400)
 
         except Exception as e:
             logging.exception(msg=f'Ошибка: {e}')
